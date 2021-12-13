@@ -23,6 +23,10 @@ img {
     width: 100%;
 }
 
+hr {
+    margin: 20px auto;
+}
+
 .run {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -37,6 +41,7 @@ h1 {
 
 h2 {
     margin-left: 40px;
+    color: rgba(0, 0, 0, 0.603);
 }
 
 p {
@@ -170,9 +175,33 @@ footer button {
 }
 
 @media(max-width: 600px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        position: relative;
+
+    }
+
+    h2::before {
+        content: "";
+        position: absolute;
+        width: 108%;
+        border: solid 0.3px rgba(225, 225, 225, 0.342);
+        top: -40%;
+        margin-left: -40px;
+        transform: rotate(180deg);
+    }
+
     .run {
         display: flex;
         flex-direction: column;
+    }
+
+    .run img {
+        margin-bottom: 120px;
     }
 
     .magna {
@@ -191,6 +220,20 @@ footer button {
 
     .tempus img {
         display: none;
+    }
+
+    .tempus button {
+        margin-bottom: -10px;
+    }
+
+    .get::before {
+        content: "";
+        position: absolute;
+        width: 108%;
+        border: solid 0.3px rgba(225, 225, 225, 0.342);
+        top: -40%;
+        transform: rotate(180deg);
+        margin-left: -200px;
     }
 
     form {

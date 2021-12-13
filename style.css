@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "font-principal";
+    src: url(./Run/font/SourceSansPro-Light.ttf);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "font-principal";
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+img {
+    width: 100%;
+}
+
+
+.run {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 3rem;
+    margin-left: 40px;
+
+}
+
+h2 {
+    margin-left: 40px;
+}
+
+p {
+    line-height: 1.5rem;
+    font-weight: normal;
+    max-width: 85%;
+    margin: 20px 40px;
+}
+
+button {
+    text-transform: uppercase;
+    font-weight: bolder;
+    height: 40px;
+    width: 160px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+
+}
+
+
+
+.piste img {
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+.magna {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    align-items: center;
+}
+
+.tempus {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+}
+
+.tempus img {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.get {
+    text-align: center;
+    margin: 40px auto;
+}
+
+form {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 5fr 1fr;
+    gap: 10px 10px;
+}
+
+.name {
+    grid-area: 1/1/2/2;
+    text-align: center;
+}
+
+.mail {
+    grid-area: 1/2/2/3;
+    text-align: center;
+}
+
+.input-name {
+    grid-area: 2/1/3/2;
+    border-radius: 5px;
+    background: chartreuse;
+}
+
+.input-mail {
+    grid-area: 2/2/3/3;
+}
+
+.message {
+    grid-area: 3/1/4/3;
+    text-align: center;
+}
+
+.textarea {
+    grid-area: 4/1/5/3;
+}
+
+.button-submit button {
+    grid-area: 5/1/6/3;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}

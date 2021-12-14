@@ -190,7 +190,7 @@ footer ul {
     display: flex;
     justify-content: space-evenly;
     margin: 30px auto;
-    width: 60%;
+    width: 50%;
     list-style: none;
     align-items: center;
 }
